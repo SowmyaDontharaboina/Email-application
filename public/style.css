@@ -1,0 +1,322 @@
+.hidden {
+    display: none;
+}
+body {
+    /* font-family: "Arial", sans-serif; */
+    font-family: "Ember",Helvetica,sans-serif;
+    font-family: "Gill Sans", sans-serif;
+    /* font-family: Okra,Helvetica,sans-serif; */
+}
+section {
+    text-align: center;
+}
+
+.btn {
+    padding: 6px 28px;
+    background: #0c7a0c;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    font-family: inherit;
+}
+.in-progress,.completed{
+    padding: 10px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+h3{ 
+    margin: 0;
+}
+
+.error {
+    color: #cb1717;
+}
+
+.modal-container {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    visibility: visible;
+    overflow: auto;
+    z-index: 11;
+}
+.modal-container .backdrop{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(28, 28, 28);
+    opacity: 0.85;
+    visibility: visible;
+    transition: opacity 0.25s ease 0s;
+}
+.modal-container .modal__container{
+    background-color: rgb(255, 255, 255);
+    height: max-content;
+    transform: translate3d(0px, 0px, 0px);
+    opacity: 1;
+    z-index: 1;
+    display: block;
+    padding: 0px;
+    width: 50%;
+    margin: auto;
+    min-height: 150px;
+    min-width: 20rem;
+    border-radius: 0.6rem;
+    transform: scale(1);
+    box-shadow: rgb(28 28 28 / 15%) 0px 1.2rem 7rem;
+    transition: transform 0.25s ease 0s;
+}
+.modal-container .close-icon{
+    position: absolute;
+    right: 9px;
+    top: 9px;
+}
+.modal-container .article-content {
+    display: flex;
+    /* height: 43rem; */
+    border-top: 1px solid rgb(207, 207, 207);
+    border-bottom: 1px solid rgb(207, 207, 207);
+    /* width: 50rem; */
+}
+.modal-container .article-content .tablist{
+    display: flex;
+    position: relative;
+}
+
+.close-btn {
+    cursor: pointer;
+}
+
+.modal-container .slider-container {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.container {
+    margin-top: 30px;
+}
+/* .heading {
+    display: flex;
+    flex-direction: column;
+} */
+.heading strong {
+    margin-bottom: 6px;
+}
+.filter-custom-badges {
+    display: flex;
+}
+
+
+/*Email */
+* {
+    box-sizing: border-box;
+  }
+.column {
+float: left;
+/* padding: 10px; */
+text-align: left;
+}
+.row{
+    border-top: 1px solid #e5e5e5;
+}
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+.column1 h2 {
+    border-bottom: 1px solid #e5e5e5;
+    margin:0;
+    padding: 10px
+}
+.column1 {
+    width: 20%;
+    /* border-right: 1px solid #e5e5e5; */
+}
+.column2 {
+    width: 30%;
+    border-right: 1px solid #e5e5e5;
+}
+.column3 {
+    width: 50%;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+}
+ul li {
+    padding: 10px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.email-webapp-container {
+    margin: 90px;
+    border: 1px solid #e5e5e5;
+}
+.email-webapp-container .top-section{
+    display: flex;
+    padding: 17px 14px;
+    background: #1964a7;
+    color: #fff;
+}
+.email-webapp-container .top-section a{
+    padding: 17px 14px;
+    border-right: 1px solid #e5e5e5;
+}
+.email-webapp-container .top-section a .fa{
+    padding-right: 6px;
+}
+.email-webapp-container .card .body{
+    height: 20px;
+    overflow: hidden;
+    margin: 0;
+    position: relative;
+}
+.email-webapp-container .card {
+    border-bottom: 1px solid #e5e5e5;
+    border-left: 1px solid #e5e5e5;
+    padding: 10px;
+    cursor: default;
+}
+.email-webapp-container .card .subject{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+}
+.email-webapp-container .card p.body::after{
+    content: "...";
+    color: #333;
+    position: absolute;
+    right: 0;
+    overflow: visible;
+    display: block;
+    bottom: 0;
+}
+.email-webapp-container .card .actionicons{
+    margin-left: auto;
+    float: right;
+    display: none;
+}
+.email-webapp-container .card .inline{
+    display: flex;
+}
+
+.email-webapp-container .card:hover .actionicons{
+    display: block;
+}
+.email-webapp-container .email-body-container .header{ 
+    padding: 20px 30px;
+    border-bottom: 1px solid #e5e5e5;
+    padding-top: 0;
+}
+.email-webapp-container .header h2,.email-webapp-container .card h3 {
+    color: #1964a7;
+}
+.email-webapp-container .header .details{
+    font-size: 1.2rem;
+    padding-bottom: 6px;
+    font-weight: 600;
+}
+.email-webapp-container .email-body-container .body-content {
+    padding: 20px 30px;
+}
+.email-webapp-container .new-email-modal-container{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    /* left: 0; */
+    width: 100%;
+    height: 70%;
+    display: flex;
+    /* visibility: visible; */
+    overflow: auto;
+    z-index: 11;
+    border: 1px solid #a3a3a3;
+    background: #fff;
+    width: 800px;
+    margin-right: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: left;
+}
+.email-webapp-container .new-email-modal-container .head-section,.new-email-modal-container .body-section{
+    text-align: left;
+}
+.email-webapp-container .new-email-modal-container > div{
+    width: 100%;
+}
+.new-email-modal-container #body-content{
+    width: 100%;
+    height: 500px;
+    border: 0;
+    border-top: 1px solid #e5e5e5;
+}
+.new-email-modal-container .labels{
+    display: flex;
+    padding: 10px;
+}
+.new-email-modal-container .labels label{
+    margin-right: 16px;
+}
+.new-email-modal-container .labels input{
+    width: 100%;
+    border-radius: 0;
+    border-color: #e7e7e7;
+}
+.new-email-modal-container .heading {
+    background: #89790d;
+    padding: 10px;
+    color: #fff;
+    display: flex;
+}
+.new-email-modal-container .heading h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.new-email-modal-container .heading .fa{
+    padding-right: 10px;
+}
+.new-email-modal-container .heading .actions{
+    margin-left: auto;
+}
+.new-email-modal-container .actions-items{
+    position: fixed;
+    bottom: 0;
+    padding-left: 27px;
+    padding-bottom: 10px;
+    width: 100%;
+    background: #f3f4f5;
+    padding-top: 10px;
+}
+.modal-container {
+    top: 50%;
+}
+.email_details li > span {
+    float: right;
+    color: #0667a1;
+    font-weight: 600;
+}
+#rich-editor {
+    width: 100%;
+    height: 500px;
+    border: 0;
+    border-top: 1px solid #e5e5e5;
+}
+.sample-toolbar {
+    padding: 3px 9px;
+}
