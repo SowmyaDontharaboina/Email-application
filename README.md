@@ -9,4 +9,6 @@ Open the terminal, enter node index.js
 
 Update username and password in index.js file to send email
 
+UI changes are in public folder file, activate when we enter node index.js in terminal
+
 <img width="1747" alt="Screenshot 2021-10-23 at 8 15 53 AM" src="https://user-images.githubusercontent.com/26399343/138539846-7ebf0e04-19cf-4b8f-b32b-8d449bd49ba7.png">
