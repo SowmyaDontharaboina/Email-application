@@ -4,7 +4,7 @@ used local storage mechanism to create and get the emails.
 Used node mailer and express to post the email using gmail smtp.
 
 
-Install node, express using npm.
+Install node, express,nodemailer using npm.
 Open the terminal, enter node index.js
 
 
